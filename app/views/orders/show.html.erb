@@ -1,0 +1,6 @@
+
+<p>
+  You ordered <%= @response['drink']%>. <br/>
+  It costs <%= @response['cost']%> <br/>
+  Proceed <a href='<%= "payments/new?original_url=#{@link_to_next}" %>'>to payment</a>
+</p>

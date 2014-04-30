@@ -1,0 +1,23 @@
+<h1>Listing pickups</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pickups.each do |pickup| %>
+      <tr>
+        <td><%= link_to 'Show', pickup %></td>
+        <td><%= link_to 'Edit', edit_pickup_path(pickup) %></td>
+        <td><%= link_to 'Destroy', pickup, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pickup', new_pickup_path %>

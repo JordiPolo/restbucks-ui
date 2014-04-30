@@ -1,0 +1,9 @@
+<%= form_tag("/payments") do %>
+  Credit card: <%= text_field_tag "cardNo" %> <br/>
+  Expires: <%= text_field_tag "expires" %> <br/>
+  Name: <%= text_field_tag "name" %> <br/>
+  amount: <%= text_field_tag "amount" %> <br/>
+
+  <%= hidden_field_tag 'original_url', @original_url %>
+  <input type="submit"/>
+<% end %>

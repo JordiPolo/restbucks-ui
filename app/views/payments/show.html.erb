@@ -1,0 +1,6 @@
+
+<p>
+  Thank you <%= @response['name']%> <br/>
+  You paid <%= @response['amount']%>. <br/>
+  Proceed <a href='<%= "pickups/new?original_url=#{@link_to_next}" %>'>to pickup</a>
+</p>
